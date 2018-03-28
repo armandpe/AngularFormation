@@ -1,0 +1,28 @@
+<h1>
+  Adding a new cocktail
+</h1>
+
+<div class="container">
+
+  <span>Name :</span>
+  <div>
+      <input placeholder="Name" [(ngModel)]="recipe.name">
+  </div>
+
+  <span>Description :</span>
+  <div>
+      <textarea matInput placeholder="Description" [(ngModel)]="recipe.description"></textarea>
+  </div>
+
+  <span>Picture :</span>
+  <div>
+      <input placeholder="Picture" [(ngModel)]="recipe.picture">
+  </div>
+
+  <span>Instructions :</span>
+  <div>
+      <textarea matInput placeholder="Instructions" [(ngModel)]="recipe.instructions[0]"></textarea>
+  </div>
+
+  <button (click)="submit()">Add</button>
+</div>

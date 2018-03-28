@@ -1,0 +1,36 @@
+.recipe-picture {
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.example-card {
+  max-width: 350px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  background-color: #bbdefb;
+}
+
+.title-recipe {
+  width: calc(100%);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  text-align: justify;
+}
+
+:host {
+  /deep/ {
+    .mat-card-header-text {
+      width: 100%;
+    }
+  }
+}
